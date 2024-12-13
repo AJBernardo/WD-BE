@@ -17,6 +17,7 @@ $colorMode = array("#EDB218" => "237, 178, 24", "#DE701B" => "222, 112, 27", "#A
     rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link href="assets/img/webicon.png" rel="icon">
 </head>
 
 <body>
@@ -29,7 +30,7 @@ $colorMode = array("#EDB218" => "237, 178, 24", "#DE701B" => "222, 112, 27", "#A
     <?php loadWelcomeContents() ?>
     <div class="row d-flex justify-content-center pb-5">
       <?php foreach ($colorMode as $hexCode => $rgbCode) { ?>
-        <div class="col-4 col-md-1 text-center">
+        <div class="col-4 col-lg-2 col-xl-2 col-xxl-1 text-center mb-4">
           <button class="btn glow-btn" style="background-color: <?php echo $hexCode; ?>;"
             onmouseover="this.style.boxShadow='0 0 20px 5px rgba(<?php echo $rgbCode; ?>, 0.901)'"
             onmouseout="this.style.boxShadow='0 0 10px rgba(0, 0, 0, 0.3)'"
@@ -41,21 +42,12 @@ $colorMode = array("#EDB218" => "237, 178, 24", "#DE701B" => "222, 112, 27", "#A
     </div>
   </div>
 
-  <div class="gallery container-fluid">
-
-  </div>
-
   <div class="islands-of-personality container-fluid">
     <h1 class="display-1 text-center pt-5">EXPLORE MY ISLANDS OF PERSONALITY</h1>
     <div class="container">
-      <?php foreach ($islandsList as $islandList) { ?>
-        <div class="row d-flex justify-content-center text-center">
-          <a href="view.php?islandOfPersonalityID=<?php echo $islandList->islandID ?>"><img
-              src="assets/img/<?php echo $islandList->islandImage ?>" alt="<?php echo $islandList->islandName ?>"
-              class="img-fluid islands"></a>
-          <p class="fs-3 w-75"><?php echo $islandList->islandShortDescrip ?></p>
-        </div>
-      <?php } ?>
+      <?php foreach ($islandsList as $islandList) {
+        echo $islandList->createIsland();
+      } ?>
     </div>
   </div>
 

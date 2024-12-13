@@ -10,6 +10,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link href="assets/img/webicon.png" rel="icon">
     <style>
         body,
         h1 {
@@ -23,9 +24,9 @@
         }
 
         .bgimg {
-            /* background-image: url('/w3images/forestbridge.jpg'); */
+            background-image: url('assets/img/cover.png');
             min-height: 100%;
-            background-position: center;
+            background-position: bottom center;
             background-size: cover;
         }
     </style>
@@ -34,17 +35,17 @@
 <body>
 
     <div class="bgimg w3-display-container w3-animate-opacity">
-        <div class="w3-display-topleft w3-padding-large w3-xlarge">
-            Logo
+        <div class="w3-display-topleft w3-padding-large w3-xlarge text-white">
+            INSIDE OUT
         </div>
-        <div class="w3-display-middle text-center">
-            <h1 class="w3-jumbo w3-animate-top">Islands of Personality</h1>
+        <div class="w3-display-middle text-center text-white">
+            <h1 class="w3-jumbo w3-animate-top" >Islands of Personality</h1>
             <hr class="w3-border-grey" style="margin:auto;width:40%">
             <p class="w3-large w3-center">Prepare to See AJ's Core Memories</p>
-            <a href="islands.php"><button class="btn btn-outline-secondary rounded-pill mt-5">EXPLORE ISLANDS</button></a>
+            <a href="islands.php"><button class="btn btn-light rounded-pill mt-5">EXPLORE ISLANDS</button></a>
         </div>
-        <div class="w3-display-bottomleft w3-padding-large">
-            Created and Designed by <a href="https://ajbernardo.github.io/" target="_blank">THY AUSTINE</a>
+        <div class="w3-display-bottomleft w3-padding-large text-white">
+            Created and Designed by <a href="https://ajbernardo.github.io/" target="_blank" class="text-white">THY AUSTINE</a>
         </div>
     </div>
 
